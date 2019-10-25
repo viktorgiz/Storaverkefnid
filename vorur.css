@@ -38,7 +38,21 @@
 
   .uppfaera__vorur{
     display:inline-flex;
+    justify-content: space-between;
   }
+
+
+  .input__staekka{
+   width: 60%;
+   display:block;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+}
+button{
+  width: 38%;
+}
 
   .button__vorur{
     display: inline-block;
@@ -51,9 +65,7 @@
     border: 1px solid #000000;
   }
 
-  .button__vorur:focus, input:focus{
-    outline: none;
-  }
+  
 
   .button__vorur:hover{
     background-color: #00b7ff;
