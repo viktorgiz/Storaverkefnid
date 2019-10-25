@@ -15,8 +15,9 @@
   <header>
     <h1> Prílihúsið </h1> 
     <div class="card__row footer__grid">
+        <div class="box__sides"> </div>
       <div class="card__head">
-        <a class="underline" href="index.html"> FORSÍÐA </a> 
+        <a href="index.html"> FORSÍÐA </a> 
         <a href="Vorur.html"> VÖRUR </a> 
         <a href="Course.html"> NÁMSKEIÐ </a>
         <a href="Starfsfolk.html"> STARFSFÓLK </a>
@@ -53,9 +54,9 @@
             <p>Fjöldi:</p>
             <div class="uppfaera__korfu">
             <div> 
-              <input type="text"
-                     id = "Fjöldi"
-                     value="2" />
+                <input type="number" step="1"
+                      id = "Fjöldi"
+                      value="2" />
             </div>
             <button class="button__karfa"><img class="img__karfa" src="./img/karfa.svg"> Uppfæra</button>
             <button class="button__karfa"> <img class="img__karfa" src="./img/karfa.svg"> Eyða úr körfu</button>
@@ -79,7 +80,7 @@
             <p>Fjöldi:</p>
             <div class="uppfaera__korfu">
               <div>
-                <input type="text"
+                <input type="number" step="1"
                       id = "Fjöldi"
                       value="4" />
               </div>
