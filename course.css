@@ -43,7 +43,7 @@ input{
     justify-content: space-between;
   }
   .Select__namskeid{
-      width:350px;
+      width:70%;
   }
   label{
     margin-bottom: 20px;
@@ -55,7 +55,7 @@ input{
        border: 1px solid black;
        border-radius: 3px;
        height:35px;
-       width: 350px;
+       width: 70%;
        padding-left: 10px;
        font-size: 16px;
        margin-bottom: 20px;
@@ -91,14 +91,35 @@ input{
         height: 40px;
     }
 
-@media(max-width:700px){
-    .grid__col{
-        width: 100%;
+
+    @media(max-width:1000px){
+        .input__staekka{
+            width:65%;
+        }
+        .Select__namskeid{
+            width:50%;
+        }
+    
+
     }
 
-    .grid__row{
-        display: flex;
-        flex-direction: column;
 
+    @media(max-width:700px){
+        main .grid__col{
+            width: 100%;
+            margin-bottom:40px;
+        }
+
+        main .grid__row{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .col__form{
+            width:100%
+        }
+        .Select__namskeid{
+            width:65%
+        }
+        
     }
-}
