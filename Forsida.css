@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  p{
+      font-size:24px;
+      margin-bottom:40px;
+  }
+  button a{
+      font-size:16px;
+      font-weight: normal;
+  }
+  button{
+      width:250px;
+      height:40px;
+  }
+  .grid__row{
+      padding-bottom:40px;
+  }
