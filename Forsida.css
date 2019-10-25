@@ -19,8 +19,9 @@
     width:250px;
     height:40px;
   }
-  .grid__row{
-    padding-bottom:40px;
+  
+  .grid__col{
+    margin-bottom:0px;
   }
   @media(max-width:1000px){
     .right__col{
@@ -31,18 +32,21 @@
   }
 
   @media(max-width:700px){
-    .grid__col{
+    main .grid__col{
         width:100%;
+        margin-bottom:40px;
 
     /* header{} */
     /* footer{} */
     }
-    .grid__row {
+    main .grid__row {
         display: flex;
         flex-direction: column;
         margin-left: -10px;
         margin-right: -10px;
     }
+
+    
 
     .grid__row:nth-child(1n) .grid__col:first-child {
         order: 2;
