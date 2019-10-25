@@ -15,6 +15,7 @@
   <header>
     <h1> Prílihúsið </h1> 
     <div class="card__row footer__grid">
+        <div class="box__sides"> </div>
       <div class="card__head">
         <a href="index.html"> FORSÍÐA </a> 
         <a href="Vorur.html"> VÖRUR </a> 
@@ -46,34 +47,35 @@
           <h3>Almennar upplýsingar</h3>
           <div class=" col__form">
               <p class="AlmUppl__p">Nafn:</p>
-              <input type="text"
+              <input class="input__staekka" type="text"
                         id = "Fjöldi"
-                        value="1" />
+                        value="" />
           </div>
           <div class=" col__form">
-              <p class="AlmUppl__p">Heimilisfang:</p>
-              <input type="text"
+              <p class ="AlmUppl__p">Heimilisfang:</p>
+              <input class="input__staekka" type="text"
                         id = "Fjöldi"
-                        value="1" />
+                        value="hí" />
           </div>
           <div class=" col__form">
               <p class="AlmUppl__p">Aldur:</p>
-              <input type="text"
+              <input class="input__staekka" type="text"
                         id = "Fjöldi"
-                        value="1" />
+                        value="30" />
           </div>
 
           <div class="col__form">
-            <p class="AlmUppl__p">Námskeið</p>
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">V0-V1</button>
-            <div id="myDropdown" class="dropdown-content">
-            <p>V2-V7</p>
-            <p>Krakkanámsekið</p>
-            <p>Fjallaklifur</p>
+                  <label class="label__namskeid" for="Námskeið">Námskeið:</label>
+                  <select name="V0-V1" id="V0-V1">
+                  <option value=>-V0-V1-</option>
+                  <option value= "V2-V4" > V2-V4 </option>
+                  <option value= "V5-V7" > V5-V7 </option>
+                  <option value= "Krakkanámskeið"> Krakkanámskeið </option>
+                  <option value= "FjallaKlifur" > Fjallaklifur </option>
+                       </select>
           </div>
-        </div>
-          </div>
+
+      
 
 
 
@@ -90,18 +92,55 @@
           <h3> Greiðsluupplýsingar</h3>
           <div class=" col__form">
             <p class="AlmUppl__p">kortanúmer:</p>
-            <input type="text"
+            <input class="input__staekka" type="text"
                       id = "Fjöldi"
-                      value="1" />
+                      value=" " />
         </div>
         <div class=" col__form">
           <p class="AlmUppl__p">korthafi:</p>
-          <input type="text"
+          <input class="input__staekka" type="text"
                     id = "Fjöldi"
-                    value="1" />
+                    value=" " />
       </div>
+      <div class="col__form flex__gildis">
+          <p>Gildistími</p>
+              <label for="Mán">mán:</label>
+                <select class="label__Gildis" name="Gildistími" id="Gildistími">
+                  <option value=>01</option>
+                  <option value= "01" > 02 </option>
+                  <option value= "02" > 02 </option>
+                  <option value= "03" > 03 </option>
+                  <option value= "04"> 04 </option>
+                  <option value= "05" > 05 </option>
+                  <option value= "06" > 06 </option>
+                  <option value= "07" > 07 </option>
+                  <option value= "08" > 08 </option>
+                  <option value= "09" > 09 </option>
+                  <option value= "10" > 10 </option>
+                  <option value= "11" > 11 </option>
+                  <option value= "12" > 12 </option>
+              </select>
+
+              <label for="Ár">Ár</label>
+                <select class="label__Gildis" name="Ár" id="Ár">
+                  <option value>2019</option>
+                  <option value= "2019" > 2019 </option>
+                  <option value= "2020" > 2020 </option>
+                  <option value= "2021" > 2021 </option>
+                  <option value= "2022" > 2022 </option>
+                  <option value= "2023" > 2023 </option>
+
+                </select>
+
+      </div>
+
+
       </div> 
           
+        </div>
+
+        <div class="grid__row">
+          <button>Skrá</button>
         </div>
         <div class="grid__col"></div>  <!-- Verður að vera -->
       </div>

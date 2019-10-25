@@ -8,3 +8,87 @@
 }
 .AlmUppl__form{
 } */
+
+input{
+    display:block;
+    border: 1px solid black;
+    border-radius: 3px;
+    height:35px;
+    width:100px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.label__Gildis{
+    position: relative;
+      display:block;
+      border: 1px solid black;
+      border-radius: 3px;
+      height:35px;
+      width:70px;
+      padding-left: 10px;
+      font-size: 16px;
+      direction: rtl;
+  }
+
+  .flex__gildis{
+    justify-content: space-between;
+  }
+
+
+label{
+    margin-bottom: 20px;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+  }
+
+.input__staekka{
+    display:block;
+    border: 1px solid black;
+    border-radius: 3px;
+    height:35px;
+    width: 430px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+select{
+    position: relative;
+    display:block;
+      border: 1px solid black;
+      border-radius: 3px;
+      height:35px;
+      width:430px;
+      padding-left: 10px;
+      font-size: 16px;
+  }
+
+  .label__gildis{
+    position: relative;
+    display:block;
+    border: 1px solid black;
+    border-radius: 3px;
+    height:35px;
+    width:70px;
+    padding-left: 10px;
+    font-size: 16px;
+    direction: rtl;
+  }
+
+  button{
+      margin: auto;
+  }
+
+@media(max-width:700px){
+    .grid__col{
+        width: 100%;
+    }
+
+    .grid__row{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+  
