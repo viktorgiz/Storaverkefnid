@@ -47,7 +47,9 @@
     .underline{
         text-decoration: underline;
     }
-
+    .box__sides{
+        width:110px;
+    }
     
 
     .card__karfa a {
@@ -59,15 +61,18 @@
     .card__head{
         display: flex;
         /* redding */
-        width: 280px;
+        width:370px;
         text-align: center;
-        margin: 0 auto;
-
+        margin: auto;
+    }
+    .card__head a{
+        font-size:20px;
     }
 
     .card__karfa{
         display: inline-flex;
         padding-top:-70px;
+        direction: rtl;
 
     }
     
@@ -88,7 +93,9 @@
         flex-wrap: wrap;
     }
 
-    .card__karfa::before{
+    .card__head{}
+
+    .card__karfa::after{
         content: url(img/karfa.svg);
         padding-top: 12px;
     }
@@ -180,6 +187,11 @@
         padding-bottom: 50px;
         margin-bottom:0px;
     }
+    .Corporate__Prilihusid{
+        font-family: 'Open Sans', sans-serif;
+        font-size:14px;
+        text-align: center;
+    }
     
     .grid__colFooter{
         width: 25%;
@@ -200,6 +212,9 @@
         color:#fffcf2;
         font-family: 'Open Sans', sans-serif;
     }
+    ul{
+        padding-bottom:40px;
+    }
     li:hover{
         color: #000000;
         transition-timing-function: ease-in-out;
@@ -207,11 +222,40 @@
         cursor: pointer;
     }
     @media(max-width:1000px){
+
+        .card__head{
+            display: inline-block;
+            width:300px;
+            margin:auto;
+        }
+        /* .card__row{
+            width:500px;
+        } */
+
+        footer .grid__row {
+            flex-wrap: wrap;
+        }
         .grid__colFooter{
             width: 50%;
             padding-right: 10px;
             padding-left: 10px;
         }
     }
-
-
+    /* Það var ekki nóg af plássi fyrir körfuna þegar skjárinn var 570px í breidd */
+    @media(max-width:700px){
+        .card__head{
+            width:100%;
+        }
+        .card__row{
+            display:flex;
+            flex-direction:column;
+        }
+        .card__karfa{
+            width:auto;
+            margin:auto;
+        }
+        .box__sides:nth-child(1){
+            width:0px;
+        }
+    }
+    
