@@ -8,3 +8,17 @@
 }
 .AlmUppl__form{
 } */
+
+
+@media(max-width:700px){
+    .grid__col{
+        width: 100%;
+    }
+
+    .grid__row{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+  
