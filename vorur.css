@@ -49,10 +49,12 @@
     border-radius: 3px;
     font-size: 16px;
     outline: none;
-}
-button{
-  width: 38%;
-}
+    height: 33px;
+    padding-left:5px;
+  }
+  button{
+    width: 38%;
+  }
 
   .button__vorur{
     display: inline-block;

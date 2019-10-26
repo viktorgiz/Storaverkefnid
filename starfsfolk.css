@@ -6,7 +6,9 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
-
+  main{
+      padding-bottom: 20px;
+  }
 
   .text__mid{
       text-align: center;
@@ -50,12 +52,15 @@
  .image4:hover{
      content: none;
  }
+ .grid__col{
+     margin-bottom:40px;
+ }
  
  @media(max-width:700px){
      .grid__col{
          width:100%;
      }
-     .grid__row{
+     main .grid__row{
          display:flex;
          flex-direction: column;
      }

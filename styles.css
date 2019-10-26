@@ -93,7 +93,7 @@
         flex-wrap: wrap;
     }
 
-    .card__head{}
+    
 
     .card__karfa::after{
         content: url(img/karfa.svg);

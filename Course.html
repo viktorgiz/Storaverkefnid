@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="course.css">
   <link rel="stylesheet" href="grid.css">
-
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +14,7 @@
   <header>
     <h1> Prílihúsið </h1> 
     <div class="card__row footer__grid">
-        <div class="box__sides"> </div>
+      <div class="box__sides"> </div>
       <div class="card__head">
         <a href="index.html"> FORSÍÐA </a> 
         <a href="Vorur.html"> VÖRUR </a> 
@@ -28,6 +27,7 @@
       </div>
     </div>
   </header>
+  <!-- Main -->
   <main>
     <div class="grid">
       <div class="grid__row">
@@ -47,106 +47,90 @@
           <h3>Almennar upplýsingar</h3>
           <div class=" col__form">
               <p class="AlmUppl__p">Nafn:</p>
-              <input class="input__staekka" type="text"
-                        id = "Fjöldi"
-                        value="" />
+              <input class="input__staekka" 
+                type="text"
+                id = "Fjöldi"
+                value="" />
           </div>
           <div class=" col__form">
               <p class ="AlmUppl__p">Heimilisfang:</p>
-              <input class="input__staekka" type="text"
-                        id = "Fjöldi"
-                        value="hí" />
+              <input class="input__staekka" 
+                type="text"
+                id = "Fjöldi"
+                value="" />
           </div>
           <div class=" col__form">
               <p class="AlmUppl__p">Aldur:</p>
-              <input class="input__staekka" type="text"
-                        id = "Fjöldi"
-                        value="30" />
+              <input class="input__staekka" 
+                type="text"
+                id = "Fjöldi"
+                value="" />
           </div>
 
           <div class="col__form">
-                  <label class="label__namskeid" for="Námskeið">Námskeið:</label>
-                  <select class="Select__namskeid name="V0-V1" id="V0-V1">
-                  <option value=>-V0-V1-</option>
-                  <option value= "V2-V4" > V2-V4 </option>
-                  <option value= "V5-V7" > V5-V7 </option>
-                  <option value= "Krakkanámskeið"> Krakkanámskeið </option>
-                  <option value= "FjallaKlifur" > Fjallaklifur </option>
-                       </select>
+            <label class="label__namskeid" for="Námskeið">Námskeið:</label>
+            <select class="Select__namskeid name="V0-V1" id="V0-V1">
+              <option value=>-V0-V1-</option>
+              <option value= "V2-V4" > V2-V4 </option>
+              <option value= "V5-V7" > V5-V7 </option>
+              <option value= "Krakkanámskeið"> Krakkanámskeið </option>
+              <option value= "FjallaKlifur" > Fjallaklifur </option>
+            </select>
           </div>
-
-      
-
-
-
-
-
-
-
-
-
-          </div>
-
-            <div class="grid__col">
-
+        </div>
+        <div class="grid__col">
           <h3> Greiðsluupplýsingar</h3>
           <div class=" col__form">
             <p class="AlmUppl__p">Kortanúmer:</p>
-            <input class="input__staekka" type="text"
-                      id = "Fjöldi"
-                      value=" " />
-        </div>
-        <div class=" col__form">
-          <p class="AlmUppl__p">Korthafi:</p>
-          <input class="input__staekka" type="text"
-                    id = "Fjöldi"
-                    value=" " />
-      </div>
-      <div class="col__form flex__gildis">
-          <p>Gildistími:</p>
-              <label for="Mán">Mán:</label>
-                <select class="label__Gildis" name="Gildistími" id="Gildistími">
-                  <option value=>01</option>
-                  <option value= "01" > 02 </option>
-                  <option value= "02" > 02 </option>
-                  <option value= "03" > 03 </option>
-                  <option value= "04"> 04 </option>
-                  <option value= "05" > 05 </option>
-                  <option value= "06" > 06 </option>
-                  <option value= "07" > 07 </option>
-                  <option value= "08" > 08 </option>
-                  <option value= "09" > 09 </option>
-                  <option value= "10" > 10 </option>
-                  <option value= "11" > 11 </option>
-                  <option value= "12" > 12 </option>
+            <input class="input__staekka" 
+              type="text"
+              id = "Fjöldi"
+              value=" " />
+          </div>
+          <div class=" col__form">
+            <p class="AlmUppl__p">Korthafi:</p>
+            <input class="input__staekka" 
+              type="text"
+              id = "Fjöldi"
+              value=" " />
+          </div>
+          <div class="col__form flex__gildis">
+            <p>Gildistími:</p>
+            <label class="man" for="Mán">Mán:</label>
+            <select class="label__Gildis" name="Gildistími" id="Gildistími">
+              <option value=>01</option>
+              <option value= "01" > 02 </option>
+              <option value= "02" > 02 </option>
+              <option value= "03" > 03 </option>
+              <option value= "04"> 04 </option>
+              <option value= "05" > 05 </option>
+              <option value= "06" > 06 </option>
+              <option value= "07" > 07 </option>
+              <option value= "08" > 08 </option>
+              <option value= "09" > 09 </option>
+              <option value= "10" > 10 </option>
+              <option value= "11" > 11 </option>
+              <option value= "12" > 12 </option>
+            </select>
+
+            <label for="Ár">Ár</label>
+              <select class="label__Gildis" name="Ár" id="year">
+                <option value>2019</option>
+                <option value= "2019" > 2019 </option>
+                <option value= "2020" > 2020 </option>
+                <option value= "2021" > 2021 </option>
+                <option value= "2022" > 2022 </option>
+                <option value= "2023" > 2023 </option>
               </select>
-
-              <label for="Ár">Ár</label>
-                <select class="label__Gildis" name="Ár" id="Ár">
-                  <option value>2019</option>
-                  <option value= "2019" > 2019 </option>
-                  <option value= "2020" > 2020 </option>
-                  <option value= "2021" > 2021 </option>
-                  <option value= "2022" > 2022 </option>
-                  <option value= "2023" > 2023 </option>
-
-                </select>
-
+          </div>
+        </div>     
       </div>
-
-
-      </div> 
-          
-        </div>
-
-        <div class="grid__row">
-          <button>Skrá</button>
-        </div>
-        <div class="row"></div>  <!-- Verður að vera -->
+      <div class="grid__row">
+        <button>Skrá</button>
       </div>
+      <div class="row"></div>
     </div>
   </main>
-
 
   <footer>
     <div class="grid footer__grid">

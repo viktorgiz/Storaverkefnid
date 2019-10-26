@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="is">
 <head>
   <meta charset="utf-8">
@@ -15,9 +14,10 @@
   <header>
     <h1> Prílihúsið </h1> 
     <div class="card__row footer__grid">
-        <div class="box__sides"> </div>
+      
+      <div class="box__sides"> </div>
       <div class="card__head">
-        <a href="index.html"> FORSÍÐA </a> 
+        <a class="underline" href="index.html"> FORSÍÐA </a> 
         <a href="Vorur.html"> VÖRUR </a> 
         <a href="Course.html"> NÁMSKEIÐ </a>
         <a href="Starfsfolk.html"> STARFSFÓLK </a>
@@ -34,7 +34,7 @@
       <div class="grid__row">
         <div class="grid__col">
 
-          <h3>Vörur</h3>
+          <h3>Vörur í körfu</h3>
         </div>
       </div>
 
@@ -54,9 +54,9 @@
             <p>Fjöldi:</p>
             <div class="uppfaera__korfu">
             <div> 
-                <input type="number" step="1"
-                      id = "Fjöldi"
-                      value="2" />
+              <input type="text"
+                     id = "Fjöldi"
+                     value="2" />
             </div>
             <button class="button__karfa"><img class="img__karfa" src="./img/karfa.svg"> Uppfæra</button>
             <button class="button__karfa"> <img class="img__karfa" src="./img/karfa.svg"> Eyða úr körfu</button>
@@ -80,7 +80,7 @@
             <p>Fjöldi:</p>
             <div class="uppfaera__korfu">
               <div>
-                <input type="number" step="1"
+                <input type="text"
                       id = "Fjöldi"
                       value="4" />
               </div>
@@ -112,7 +112,7 @@
             <div>
               <div class="col__form">
               <label for="postnumer">Póstnúmer</label>
-              <select name="Velja póstnúmer" id="Velja póstnúmer">
+              <select class="Select__namskeid" name="Velja póstnúmer" id="Velja póstnúmer">
                 <option value="" disabled selected>-Velja póstnúmer-</option>
                 <option value="101 Reykjavík">101 Reykjavík</option>
                 <option value="103 Reykjavík">103 Reykjavík</option>
@@ -141,8 +141,8 @@
             </div>
 
             <div class="col__form flex__gildis">
-              <p>Gildistími</p>
-                  <label for="Mán">mán:</label>
+              <p>Gildistími:</p>
+                  <label class="man" for="Mán">mán:</label>
                     <select class="label__Gildis" name="Gildistími" id="Gildistími">
                       <option value=>01</option>
                       <option value= "01" > 02 </option>
@@ -173,6 +173,11 @@
           </div>
           </div>
         </div>
+
+        <div class="grid__row">
+          <button class="Sidasti__button">Kaupa</button>
+        </div>
+
       </div>
     </div>
   </main>
@@ -218,6 +223,9 @@
             <li>Karfa</li>
           </ul>
         </div>
+      </div>
+      <div>
+        <p class="Corporate__Prilihusid">© 2019 Prílihúsið</p>
       </div>
     </div>
   </footer>

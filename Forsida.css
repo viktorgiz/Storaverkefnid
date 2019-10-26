@@ -19,11 +19,16 @@
     width:250px;
     height:40px;
   }
-  
+  main .grid__row{
+    margin-bottom:40px;
+  }
   .grid__col{
     margin-bottom:0px;
   }
   @media(max-width:1000px){
+    main .grid__row{
+      margin-bottom: 70px;
+    }
     .right__col{
       height: 100%;
       display:flex;
@@ -44,6 +49,7 @@
         flex-direction: column;
         margin-left: -10px;
         margin-right: -10px;
+        margin-bottom: 0;
     }
 
     
@@ -74,7 +80,6 @@
 
     .image {
         max-width: 100%;
-        margin-bottom: 20px;
     }
     .text{
         margin-bottom: 20px;
