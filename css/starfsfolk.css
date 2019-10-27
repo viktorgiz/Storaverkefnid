@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  main{
+    padding-bottom: 20px;
+  }
+
+  .grid__col{
+    margin-bottom: 40px;
+    width:50%;
+
+  }
+  .col1, .col2, .col3, .col4{
+    transform-style: preserve-3d;
+    transition: all 200ms ease-in-out 0s;
+  }
+
+  .col__text{
+    position: absolute;
+    top:40%;
+    transform: rotateY(90deg);
+    order:0;
+    width:100%
+  }
+
+  .text__mid{
+    text-align: center;
+    margin: auto;
+  }
+  .image1{
+    content: url(../img/Karítas.jpg);
+  }
+  .image2{
+    content: url(../img/Úlfur\ Arnar.jpg);
+  }
+  .image3{
+    content: url(../img/Bergrós.jpg);
+  }  
+  .image4{
+    content: url(../img/Hannes.jpg);
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4{
+    margin: auto;
+    width:100%;
+    margin-bottom:40px;
+    transform-style: preserve-3d;
+    transition: 200ms ease-in-out;
+  }
+
+
+  .col1:hover .image1,
+  .col2:hover .image2,
+  .col3:hover .image3,
+  .col4:hover .image4{
+    transform-style: preserve-3d;
+    transition: 200ms ease-in-out;
+    transform: rotateY(90deg); 
+  }
+  
+  
+  .col1:hover .col__text,
+  .col2:hover .col__text,
+  .col3:hover .col__text,
+  .col4:hover .col__text{
+    transform-style: preserve-3d;
+    transition: 200ms ease-in-out;
+    transform: rotateY(0deg); 
+  }
+
+
+  @media(max-width:700px){
+    .grid__col{
+        width:100%;
+        margin-right:10px;
+    }
+    main .grid__row{
+        display:flex;
+        flex-direction: column;
+    }
+    .text__mid{
+        margin-right:20px;
+    }
+}

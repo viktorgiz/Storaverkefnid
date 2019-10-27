@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prílihúsið</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../css/header_footer.css">
+  <link rel="stylesheet" href="../css/course.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1> Prílihúsið </h1> 
+    <div class="header__main footer__grid">
+      <div class="header__sidebox"> </div>
+      <div class="header__pages">
+        <a href="../index.html"> FORSÍÐA </a> 
+        <a href="Vorur.html"> VÖRUR </a> 
+        <a class="page--underline" href="Course.html"> NÁMSKEIÐ </a>
+        <a href="Starfsfolk.html"> STARFSFÓLK </a>
+      </div>
+      <div class="header__karfa header__sidebox">
+        <a class="karfa__modify" href="karfa.html"> Karfa (6)</a>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <div class="grid">
+      <div class="grid__row">
+        <div class="grid__col">
+          <div class="text">
+            <h3>Námskeið</h3>
+            <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+          </div>
+        </div>
+        <div class="grid__col col__img"> 
+          <img class="image" src="../img/climbing-gym.jpg" alt="Mynd af prílihúsi">
+        </div>
+      </div>
+      <div class="grid__row">
+        <div class="grid__col">
+
+          <h3>Almennar upplýsingar</h3>
+          <div class=" col__form">
+              <p class="AlmUppl__p">Nafn:</p>
+              <input class="input__staekka" 
+                type="text"
+                id = "Fjöldi"
+                value="" />
+          </div>
+          <div class=" col__form">
+              <p class ="AlmUppl__p">Heimilisfang:</p>
+              <input class="input__staekka" 
+                type="text"
+                id = "Fjöldi"
+                value="" />
+          </div>
+          <div class=" col__form">
+              <p class="AlmUppl__p">Aldur:</p>
+              <input class="input__staekka" 
+                type="text"
+                id = "Fjöldi"
+                value="" />
+          </div>
+
+          <div class="col__form">
+            <label class="label__namskeid" for="Námskeið">Námskeið:</label>
+            <select class="Select__namskeid name="V0-V1" id="V0-V1">
+              <option value=>-V0-V1-</option>
+              <option value= "V2-V4" > V2-V4 </option>
+              <option value= "V5-V7" > V5-V7 </option>
+              <option value= "Krakkanámskeið"> Krakkanámskeið </option>
+              <option value= "FjallaKlifur" > Fjallaklifur </option>
+            </select>
+          </div>
+        </div>
+        <div class="grid__col">
+          <h3> Greiðsluupplýsingar</h3>
+          <div class=" col__form">
+            <p class="AlmUppl__p">Kortanúmer:</p>
+            <input class="input__staekka" 
+              type="text"
+              id = "Fjöldi"
+              value=" " />
+          </div>
+          <div class=" col__form">
+            <p class="AlmUppl__p">Korthafi:</p>
+            <input class="input__staekka" 
+              type="text"
+              id = "Fjöldi"
+              value=" " />
+          </div>
+          <div class="col__form flex__gildis">
+            <p>Gildistími:</p>
+            <label class="man" for="Mán">Mán:</label>
+            <select class="label__Gildis" name="Gildistími" id="Gildistími">
+              <option value=>01</option>
+              <option value= "01" > 02 </option>
+              <option value= "02" > 02 </option>
+              <option value= "03" > 03 </option>
+              <option value= "04"> 04 </option>
+              <option value= "05" > 05 </option>
+              <option value= "06" > 06 </option>
+              <option value= "07" > 07 </option>
+              <option value= "08" > 08 </option>
+              <option value= "09" > 09 </option>
+              <option value= "10" > 10 </option>
+              <option value= "11" > 11 </option>
+              <option value= "12" > 12 </option>
+            </select>
+
+            <label for="Ár">Ár</label>
+              <select class="label__Gildis" name="Ár" id="year">
+                <option value>2019</option>
+                <option value= "2019" > 2019 </option>
+                <option value= "2020" > 2020 </option>
+                <option value= "2021" > 2021 </option>
+                <option value= "2022" > 2022 </option>
+                <option value= "2023" > 2023 </option>
+              </select>
+          </div>
+        </div>     
+      </div>
+      <div class="grid__row">
+        <button>Skrá</button>
+      </div>
+      <div class="row"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="grid footer__grid">
+      <div class="grid__row">
+        <div class="grid__colFooter">
+          <h4 href="Vorur.html"> Vöruflokkar</h4>
+          <ul>
+            <li href="Vorur.html">Nauðsynjavörur</li>
+            <li href="Vorur.html">Frábærar vörur</li>
+            <li href="Vorur.html">Ómissandi vörur</li>
+            <li href="Vorur.html">Ótrúlegar vörur</li>
+            <li href="Vorur.html">Magnaðar vörur</li>
+          </ul>
+        </div>
+        <div class="grid__colFooter">
+          <h4 href="Vorur.html">Vöruflokkar</h4>
+          <ul>
+            <li href="Vorur.html">Trylltar vörur</li>
+            <li href="Vorur.html">Geggjaðar vörur</li>
+            <li href="Vorur.html">Svakalegar vörur</li>
+            <li href="Vorur.html">Fáranlegar vörur</li>
+            <li href="Vorur.html">Klikkaðar vörur</li>
+          </ul>
+        </div>
+        <div class="grid__colFooter">
+          <h4 href="Course.html">Námskeið</h4>
+          <ul>
+            <li href="Course.html">V0 - V1 námskeið</li>
+            <li href="Course.html">V2 - V4 námskeið</li>
+            <li href="Course.html">V5 - V7 námskeið</li>
+            <li href="Course.html">Fjallaklifur námskeið</li>
+          </ul>
+        </div>
+        <div class="grid__colFooter">
+          <h4>Síður</h4>
+          <ul>
+            <li href="Vorur.html">Allar vörur</li>
+            <li href="Starfsfolk.html">Starfsfólk</li>
+            <li href="Course.html">Námskeið</li>
+            <li href="karfa.html">Karfa</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="Corporate__Prilihusid">© 2019 Prílihúsið</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

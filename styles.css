@@ -1,16 +1,93 @@
+/* 
+-- Block component 
+.btn { }
+
+-- Element that depends upon the block 
+.btn__price { }
+
+-- Modifier that changes the style of the block 
+.btn--orange{ }
+.btn--big{ }
+
+
+.btn{ }           Parent
+.btn__price{ }    Child       underscore
+.big--big{}       Modifier     
+*/
+:root{
+    --Ora:#ff5000;
+    --Bla: #000000;
+    --Blu:  #00b7ff;
+    --Whi: #fffcf2; 
+
+    --Fyrirsogn:'Oswald';
+    --Meginmal: 'Open sans', sans-serif;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
-
-    *, *:before, *:after {
+    *,*:before, *:after{
         box-sizing: inherit;
     }
-  
     html{
         font-size: 16px;
         box-sizing: border-box;
     }
+
+    /* =========  Almennt  ========= */
+
+    h3{
+        font-family: var(--Fyrirsogn);
+        font-weight: bold;
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    /* .text{
+        margin-bottom: 20px;
+    } */
+
+    p{
+        margin-bottom: 20px;
+        font-family: var(--Meginmal);
+        font-size: 16px;
+    }
+
+    button{
+        width:250px;
+        height:40px;
+        background-color:var(--Blu);
+        border: 1px solid var(--Blu);
+        padding: 5px 40px;
+        border-radius:5px;
+    }
+
+      
+
+    button:hover{
+        background-color: var(--Ora);
+        border: 1px solid var(--Ora);
+        transition-timing-function: ease-in-out;
+        transition: 200ms;
+    }
+
+    button a{
+        font-family: var(--Meginmal);
+        font-size:16px;
+        font-weight: normal;
+    }
+
+    .image {
+        max-width: 100%;
+        /* object-fit:cover;
+        display: inline; */
+      }
+    
+
+    /* ========= Grid ========= */
 
     main{
         margin: 0 auto;
@@ -19,98 +96,8 @@
         padding-right: 20px;
     }
 
-
-    header{
-        box-sizing: border-box;
-        background-color: #ff5000;
-        padding-bottom:10px;
-        margin-bottom:40px;
-    }
-    h1{
-        text-align: center;
-        font-size: 60px;
-        font-family: 'Oswald';
-    }
-
-    a{
-        /* Meðan við finnum hvað font family er í h2 */
-        font-family: 'Oswald';
-        font-weight: normal;
-        font-size: 20px;
-        text-align: center;
-        justify-content: space-around;
-        padding: 10px;
-        color: #000000;
-        text-decoration: none;
-        
-    }
-    .underline{
-        text-decoration: underline;
-    }
-    .box__sides{
-        width:110px;
-    }
-    
-
-    .card__karfa a {
-        direction: rtl;
-        width: auto;
-        padding-right:0px;
-    }
-  
-    .card__head{
-        display: flex;
-        /* redding */
-        width:370px;
-        text-align: center;
-        margin: auto;
-    }
-    .card__head a{
-        font-size:20px;
-    }
-
-    .card__karfa{
-        display: inline-flex;
-        padding-top:-70px;
-        direction: rtl;
-
-    }
-    
-    .box{
-        font-family: 'Open Sans', sans-serif;
-        display: block;
-        width: 100px;
-        align-content: right;
-        height: auto;
-        padding-left: 0;
-        text-align: left;
-        font-weight: thin;
-
-    }
-
-    .card__row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    
-
-    .card__karfa::after{
-        content: url(img/karfa.svg);
-        padding-top: 12px;
-    }
-
-    a:hover{
-        color: #fffcf2;
-        transition-timing-function: ease-in-out;
-        transition: 200ms;
-    }
-
-    h3{
-        font-family: 'Oswald';
-        font-weight: bold;
-        font-size: 36px;
-        margin-bottom: 32px;
+    .grid{
+        margin: 0 auto;
     }
 
     .grid__row{
@@ -126,149 +113,19 @@
         margin-bottom:20px;
     }
 
-    .text{
-        margin-bottom: 20px;
-    }
-
-    .col__img{
-        order: 0;
-    }
-
-
-    .image {
-        max-width: 100%;
-        /* object-fit:cover;
-        display: inline; */
-    }
-
-
-
-    p{
-        margin-bottom: 20px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-    }
-
-
-
-    .grid{
-        /* width: 1100px; */
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button{
-        background-color: #00b7ff;
-        border: 1px solid #00b7ff;
-        padding: 5px 40px;
-        border-radius:5px;
-    }
-
-    button:hover{
-        background-color: #ff5000;
-        border: 1px solid #ff5000;
-        transition-timing-function: ease-in-out;
-        transition: 200ms;
-    }
-    button a{
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    .footer__grid{
-        margin: 0 auto;
-        max-width: 1240px;
-        padding:0 20px;
-    }
-    footer{
-        /* padding-left:20px;
-        padding-right:20px; */
-        padding-top:40px;
-        background-color: #00b7ff;
-        padding-bottom: 50px;
-        margin-bottom:0px;
-    }
-    .Corporate__Prilihusid{
-        font-family: 'Open Sans', sans-serif;
-        font-size:14px;
-        text-align: center;
-        margin-bottom:0px;
-    }
-    
-    
-    .grid__colFooter{
-        width: 25%;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    
-    h4{
-        font-family: 'Open Sans', sans-serif;
-        font-size:21px;
-        padding-bottom:20px;
-    }
-    
-    li{
-        font-size: 14px;
-        list-style-type: none;
-        padding: 4px 0;
-        color:#fffcf2;
-        font-family: 'Open Sans', sans-serif;
-    }
-    ul{
-        padding-bottom:40px;
-    }
-    li:hover{
-        color: #000000;
-        transition-timing-function: ease-in-out;
-        transition: 200ms;
-        cursor: pointer;
-    }
-    @media(max-width:1000px){
-
-        .card__head{
-            display: inline-block;
-            width:300px;
-            margin:auto;
-        }
-        /* .card__row{
-            width:500px;
-        } */
-
-        footer .grid__row {
-            flex-wrap: wrap;
-        }
-        .grid__colFooter{
-            width: 50%;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
-    }
-    /* Það var ekki nóg af plássi fyrir körfuna þegar skjárinn var 570px í breidd */
     @media(max-width:700px){
-        .card__head{
-            width:100%;
-        }
-        .card__row{
-            display:flex;
-            flex-direction:column;
-        }
-        .card__karfa{
-            width:auto;
-            margin:auto;
-        }
-        .box__sides:nth-child(1){
-            width:0px;
-        }
         .grid__col{
             padding-right:20px;
         }
-        footer .grid__row {
-            flex-wrap: wrap;
-        }
-        .grid__colFooter{
-            width: 50%;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
     }
+
     
+
+
+
+
+
+
+
+
+

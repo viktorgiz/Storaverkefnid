@@ -1,0 +1,19 @@
+{
+  "name": "hopaverkefni1",
+  "version": "1.0.0",
+  "description": "thad eru tvö stór verkefni per önn, þetta er eitt af þeim. Búin var til heimasíða",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktorgiz/Storaverkefnid.git"
+  },
+  "author": "Viktor Helgi Gizurarson, Þorsteinn Sigurðsson, Tindur Sigurðarson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viktorgiz/Storaverkefnid/issues"
+  },
+  "homepage": "https://github.com/viktorgiz/Storaverkefnid#readme"
+}

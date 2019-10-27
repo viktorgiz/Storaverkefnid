@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    *,*:before, *:after{
+        box-sizing: inherit;
+    }
+    
+    :root{
+        --Ora:#ff5000;
+        --Bla: #000000;
+        --Blu:  #00b7ff;
+        --Whi: #fffcf2; 
+
+        --Fyrirsogn:'Oswald';
+        --Meginmal: 'Open sans', sans-serif;
+    }
+    /* ==== Header og Footer ===== */
+    .footer__grid{
+        margin: 0 auto;
+        max-width: 1240px;
+        padding:0 20px;
+    }
+
+
+    /* ========= Header ========= */
+
+
+
+    header{
+        box-sizing:border-box;
+        background-color: var(--Ora);
+        padding-bottom:10px;
+        margin-bottom:40px;
+    }
+    /* .card__row */
+    .header__main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        margin-bottom:10px;
+        text-align: center;
+        font-size: 60px;
+        font-family: var(--Fyrirsogn);
+    }
+    /* underline */
+    .page--underline{
+        text-decoration: underline;
+    }
+    /* .box__sides */
+    .header__sidebox{
+        width:110px;
+    }
+    /* .card__head */
+    .header__pages{
+        display: flex;
+        /* redding */
+        width:370px;
+        text-align: center;
+        margin: auto;
+    }
+
+    a{
+        /* Meðan við finnum hvað font family er í h2 */
+        font-family: 'Oswald';
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+        justify-content: space-around;
+        padding: 0 10px;
+        color: var(--Bla);
+        text-decoration: none;
+        
+    }
+
+    .pages a{
+        font-size:20px;
+    }
+    /* card__karfa */
+    .header__karfa{
+        margin:auto 0;
+        display: inline-flex;
+        padding-top:-70px;
+        direction: rtl;
+    }
+    .header__karfa a {
+        margin:auto 0;
+ 
+        direction: rtl;
+        width: auto;
+        padding-right:0px;
+        font-size: 18px;
+    }
+
+    .header__karfa::after{
+        content: url(../img/karfa.svg);
+        margin: auto 0;
+    }
+
+    a:hover{
+        color:var(--Whi);
+        transition-timing-function: ease-in-out;
+        transition: 200ms;
+    }
+
+    /* box  */
+    .karfa__modify{
+        font-family: var(--Meginmal);
+        display: block;
+        height: auto;
+        padding-left: 0;
+        text-align: left;
+    }
+    @media(max-width:1000px){
+        .header__pages{
+            display: inline-block;
+            width:300px;
+            margin:auto;
+        }
+    }
+    @media(max-width:700px){
+        .header__pages{
+            width:100%;
+        }
+        .header__main{
+            display:flex;
+            flex-direction:column;
+        }
+        .header__karfa{
+            width:auto;
+            margin:auto;
+        }
+        .header__sidebox:nth-child(1){
+            width:0px;
+        }
+        .header__karfa{
+            margin:10px auto;
+        }
+    }
+
+
+
+
+    /* ========= Footer ========= */
+    footer{
+        /* padding-left:20px;
+        padding-right:20px; */
+        padding-top:40px;
+        background-color: var(--Blu);
+        padding-bottom: 40px;
+        margin-bottom:0px;
+    }
+
+    .Corporate__Prilihusid{
+        font-family: var(--Meginmal);
+        font-size:14px;
+        text-align: center;
+        margin-bottom:0px;
+    }
+
+    .grid__colFooter{
+        width: 25%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    h4{
+        font-family: var(--Meginmal);
+        font-size:24px;
+        padding-bottom:20px;
+    }
+
+    li{
+        font-size: 16px;
+        list-style-type: none;
+        padding-bottom: 10px;
+        color:var(--Whi);
+        font-family: var(--Meginmal);
+    }
+    ul{
+        padding-bottom:50px;
+    }
+    li:hover{
+        color:  var(--Bla);
+        transition-timing-function: ease-in-out;
+        transition: 200ms;
+        cursor: pointer;
+    }
+
+    @media(max-width:1000px){
+        footer .grid__row {
+            flex-wrap: wrap;
+        }
+        .grid__colFooter{
+            width: 50%;
+            padding-right: 10px;
+            padding-left: 10px;
+        
+        }
+    }
+
+    @media(max-width:700px){
+        footer .grid__row {
+            flex-wrap: wrap;
+        }
+        .grid__colFooter{
+            width: 50%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
