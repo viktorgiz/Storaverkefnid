@@ -1,2 +1,0 @@
-# Storaverkefnid
-nocne
